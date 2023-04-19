@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Панель управления - AnonHost.ga</title>
+    <link rel="stylesheet" href="../css/control-panel.css">
+</head>
+<body>
+    
+    <noscript>
+        <center>
+            <b>
+                Увы, пока-что данный сервис работает по большей части на JavaScript, и не может взаимодействовать с API без нег
+                <br/>
+                Пожалуйста включите JS в настройках браузера, обещаем что мы не будем собирать ваши данные с помощью трекеров =)
+            </b>
+            <br/><br/>
+            Вы также можете помочь нам с разработкой и исправить данную недоработку на GitHub:<br/>
+            <a href="https://github.com/diveloper53/anonhost.ga">https://github.com/diveloper53/anonhost.ga</a> |
+            <a href="https://github.com/diveloper53/api.anonhost.ga">https://github.com/diveloper53/api.anonhost.ga</a>
+        </center>
+        <hr/>
+    </noscript>
+
+    <header>
+        <div class="fileUpload">
+            <button class="fileUploadButton">
+                Загрузить
+                <img class="fileUploadIcon" src="../icons/upload.svg">
+            </button>
+            <span class="fileUploadText">
+                &LeftArrow; Нажмите здесь или перетащите файлы в окно
+            </span>
+            <input type="file" class="fileUploadInput" multiple hidden>
+        </div>
+        <div class="headerActions">
+            <button class="directoryButton backDirectoryButton">
+                <img src="../icons/back.svg" class="parentDirectoryButtonIcon">
+                <span class="directoryButtonText">Назад</span>
+            </button>
+            
+            <button class="directoryButton createDirectoryButton">
+                <img src="../icons/mkdir.svg" class="createDirectoryButtonIcon">
+                <span class="directoryButtonText">Создать папку</span>
+            </button>
+
+            <input type="text" class="directoryPathText" value="Загрузка..." disabled>
+        </div>
+    </header>
+    <div class="content">
+        <div class="files">
+            Загрузка...
+        </div>
+        <div class="info">
+            <label class="anonDataLabel">Логин:</label>
+            <input type="text" class="anonData" id="anonDataLogin" value="Загрузка..." disabled>
+            <label class="anonDataLabel">Пароль:</label>
+            <input type="text" class="anonData" id="anonDataPassword" value="Загрузка..." disabled>
+            <span class="anonDataWarn">
+                Пожалуйста сохраните эти данные в надежное место, если вы не хотите потерять доступ к вашему хостингу!
+            </span>
+            <label class="anonDataLabel">Времени осталось:</label>
+            <span class="anonTimeLeft" id="anonTimeLeft">Загрузка...</span>
+            <label class="anonDataLabel">Домашняя папка:</label>
+            <input type="text" class="anonData" id="anonDataHomeDir" value="Загрузка..." disabled>
+            <video class="tutorialVideo" src="../tutorial.mp4" controls>
+            </video>
+        </div>
+    </div>
+    <footer>
+        <span>
+            (c) 2023 - <a href="https://diveloper.ga/">Diveloper.ga</a> - <a href="https://anonhost.ga/">AnonHost.ga</a> - <a href="https://github.com/diveloper53/anonhost.ga/">View on GitHub</a>
+            <br/><br/>
+            <i>Спасибо, что вы с нами!</i>
+        </span>
+    </footer>
+
+    <script src="../js/control-panel.js"></script>
+</body>
+</html>

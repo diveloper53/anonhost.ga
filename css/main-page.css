@@ -1,0 +1,278 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+        Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyNoMove {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.firstBlock {
+    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 255)),
+        url("../images/cyberspace.jpg");
+    background-position: center;
+    background-size: cover;
+
+    width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.firstBlockInfo {
+    padding: 5%;
+    padding-bottom: 0%;
+}
+
+.firstBlockTitle {
+    color: white;
+
+    font-size: 500%;
+    font-weight: bold;
+}
+
+.firstBlockSubtitle {
+    color: white;
+
+    font-size: 200%;
+    font-style: oblique;
+    font-weight: 500;
+}
+
+.firstBlockText {
+    color: white;
+
+    font-size: 110%;
+
+    padding-top: 5%;
+    padding-bottom: 2%;
+
+    padding-right: 50%;
+}
+
+.firstBlockDisclaimer {
+    color: lightslategray;
+    font-size: 90%;
+}
+
+.firstBlockButtons {
+    padding-bottom: 1%;
+
+    display: flex;
+    align-items: center;
+}
+
+.firstBlockButton {
+    color: white;
+    background: #5170a1;
+    font-size: 115%;
+    margin: 2%;
+    padding: 1%;
+
+    border-radius: 5px;
+    outline: 5px solid #6a87b644;
+
+    transition: all 1s;
+    text-decoration: none;
+}
+
+.firstBlockButton:hover {
+    font-size: 135%;
+
+    background: #5174ad;
+    border-radius: 50px;
+    outline: 8px solid #3479e044;
+}
+
+.firstBlockMainButton {
+    background: #499432;
+    outline: 8px solid #42e03444;
+    font-size: 125%;
+}
+
+.firstBlockMainButton:hover {
+    background: #54cc30;
+    outline: 8px solid #2aff1644;
+}
+
+.firstBlockLoginButton {
+    position: absolute;
+    right: 0%;
+
+    color: black;
+    background: #d6d6d6;
+    border-radius: 50px;
+    outline: 4px solid #4e4e4e44;
+}
+
+.firstBlockLoginButton:hover {
+    font-size: 125%;
+
+    background: #ffffff;
+    border-radius: 50px;
+    outline: 5px solid #83838344;
+}
+
+@media (max-width: 75vh) {
+    .firstBlockInfo {
+        justify-content: center;
+    }
+
+    .firstBlockTitle {
+        font-size: 300%;
+
+        text-align: center;
+    }
+
+    .firstBlockSubtitle {
+        font-size: 100%;
+
+        text-align: center;
+    }
+
+    .firstBlockText {
+        font-size: 80%;
+
+        padding-right: 0%;
+
+        text-align: center;
+    }
+
+    .firstBlockButtons {
+        justify-content: center;
+    }
+}
+
+.secondBlock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100vw;
+
+    background-color: white;
+}
+
+.secondBlockFeature {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    padding: 5%;
+    width: 150px;
+}
+
+.secondBlockFeatureCircle {
+    background-color: rgb(201, 201, 201);
+    border-radius: 100%;
+    outline: 8px solid #53535344;
+
+    width: 150px;
+    height: 150px;
+
+    margin-bottom: 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondBlockFeatureIcon {
+    width: 110px;
+    height: 110px;
+}
+
+.secondBlockFeatureTitle {
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.secondBlockFeatureText {
+    margin-top: 5%;
+    font-style: oblique;
+}
+
+.thirdBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thirdBlockVideo {
+    outline: 1px solid rgb(201, 201, 201);
+    border-radius: 25px;
+
+    width: 80%;
+}
+
+.fourthBlockQuotes {
+    outline: 2px dashed rgb(130, 170, 200);
+
+    margin: 50px;
+    width: 50vw;
+}
+
+.fourthBlock {
+    display: flex;
+    justify-content: center;
+}
+
+.fourthBlockQuotesText {
+    color: rgb(18, 58, 88);
+    font-style: oblique;
+
+    padding: 15px;
+    padding-bottom: 5px;
+}
+
+.fourthBlockQuotesAuthor {
+    color: rgb(18, 58, 88);
+    font-style: oblique;
+    text-decoration: overline underline;
+    text-align: end;
+
+    padding: 15px;
+    padding-top: 0px;
+}
+
+.fourthBlockLinks {
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    color: white;
+    background-color: #07090a;
+    padding: 1vh;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: rgb(192, 192, 192);
+}

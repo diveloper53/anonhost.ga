@@ -1,0 +1,239 @@
+.popupWindow {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 5px;
+
+    background-color: white;
+    outline: 5px solid lightgray;
+    border-radius: 25px;
+
+    width: 35vh;
+    height: 30vh;
+}
+
+.popupWindowBackground {
+    display: none;
+    position: fixed;
+    z-index: 15;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0,0,0,0.5);
+}
+
+.popupWindowCloseButton {
+    position: absolute;
+    right: 5%;
+
+    background: transparent;
+    border: none !important;
+    font-size: 100%;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.popupWindowWarnContent {
+    width: 90%;
+    height: 65%;
+
+    font-style: oblique;
+    font-size: 90%;
+    font-weight: 200;
+
+    overflow: auto;
+}
+
+.popupWindowOneContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.popupWindowOneButton {
+    border-radius: 20px;
+    border-style: none;
+
+    width: 15vh;
+    height: 10vh;
+
+    padding: 5px;
+    padding-top: 50px;
+
+    margin: 5px;
+
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.popupWindowOneButton:hover {
+    font-size: 105%;
+
+    width: 16vh;
+    height: 12vh;
+}
+
+#popupWindowOneButtonOne {
+    background: linear-gradient(to top right, #45C9FF, #0325FF);
+}
+
+#popupWindowOneButtonTwo {
+    background: linear-gradient(to top right, #02f838, #00c3ff);
+}
+
+#popupWindowOneButtonThree {
+    background: linear-gradient(to top right, #ffc400, #ff0303);
+}
+
+#popupWindowOneButtonFour {
+    background: linear-gradient(to top right, #ff52a3, #750c35);
+}
+
+.popupWindowOneButtonText {
+    color: white;
+
+    text-align: center;
+
+    font-size: 115%;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.popupWindowOneOther {
+    position: absolute;
+    text-align: center;
+    
+    bottom: 5%;
+}
+
+.popupWindowTwoContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    width: 90%;
+    height: 65%;
+}
+
+.popupWindowTwoRangeText {
+    font-size: 125%;
+    font-style: italic;
+
+    text-align: center;
+}
+
+.popupWindowLoginTextInputLabel {
+    font-size: 125%;
+}
+
+.popupWindowLoginTextInput {
+    font-size: 175%;
+    border-radius: 5px;
+}
+
+.popupWindowSubmit {
+    position: absolute;
+    bottom: 5%;
+
+    font-size: 115%;
+    margin: 2%;
+    padding: 1%;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.popupWindowSubmit:hover {
+    outline: 0.5px solid #a7a7a7;
+    box-shadow: 0 2px 7px rgb(197, 197, 197);
+}
+
+.popupWindowWarn-animShow {
+    display: flex;
+    animation: popupWindowWarn-anim 0.5s;
+}
+
+.popupWindowWarn-animClose {
+    display: none;
+}
+
+@keyframes popupWindowWarn-anim {
+    from {
+        display: flex;
+        top: 60%;
+        opacity: 0;
+    }
+    to {
+        display: flex;
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+.popupWindowOne-animShow {
+    display: flex;
+    animation: popupWindowOne-anim 0.5s;
+}
+
+.popupWindowOne-animClose {
+    display: none;
+}
+
+@keyframes popupWindowOne-anim {
+    from {
+        display: flex;
+        opacity: 0;
+    }
+    to {
+        display: flex;
+        opacity: 1;
+    }
+}
+
+.popupWindowTwo-animShow {
+    display: flex;
+    animation: popupWindowTwo-anim 0.5s;
+}
+
+.popupWindowTwo-animClose {
+    display: none;
+}
+
+@keyframes popupWindowTwo-anim {
+    from {
+        display: flex;
+        opacity: 0;
+    }
+    to {
+        display: flex;
+        opacity: 1;
+    }
+}
+
+.popupWindowBackground-animShow {
+    display: flex;
+    animation: popupWindowBackground-anim 0.5s;
+}
+
+.popupWindowBackground-animClose {
+    display: none;
+}
+
+@keyframes popupWindowBackground-anim {
+    from {
+        display: flex;
+        opacity: 0;
+    }
+    to {
+        display: flex;
+        opacity: 1;
+    }
+}

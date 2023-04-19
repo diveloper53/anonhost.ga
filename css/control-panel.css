@@ -1,0 +1,301 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+        Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #dddddd;
+    border-radius: 25px;
+
+    margin: 10px;
+    padding: 0px;
+
+    height: 10vh;
+}
+
+.fileUpload {
+    display: flex;
+    align-items: center;
+
+    margin: 0px;
+
+    height: 62%;
+}
+
+.fileUploadButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background: #c9c9c9;
+    border-radius: 10px;
+    border: none;
+
+    margin: 25px;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.fileUploadIcon {
+    width: 50px;
+    height: 50px;
+}
+
+.fileUploadText {
+    font-weight: bolder;
+    font-size: 150%;
+}
+
+.headerActions {
+    display: flex;
+    align-items: center;
+
+    margin: 5px;
+}
+
+.directoryButton {
+    display: flex;
+    align-items: center;
+
+    background: #e7e7e7;
+    border-radius: 10px;
+    border-color:rgb(192, 192, 192);
+    border-style: solid;
+
+    margin-left: 5px;
+    padding: 5px;
+
+    height: 25px;
+
+    cursor: pointer;
+}
+
+.backDirectoryButton {
+    margin-left: 25px;
+}
+
+.createDirectoryButtonIcon {
+    height: 25px;
+    width: 25px;
+}
+
+.parentDirectoryButtonIcon {
+    height: 20px;
+    width: 20px;
+}
+
+.directoryButtonText {
+    font-weight: bold;
+    margin-left: 2px;
+}
+
+.directoryPathText {
+    font-size: 100%;
+    font-weight: 600;
+
+    background: #e7e7e7;
+    border-radius: 10px;
+    border-color:rgb(192, 192, 192);
+    border-style: solid;
+    
+    width: 50%;
+
+    margin-left: 5px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: #f1f1f1;
+    border-radius: 25px;
+
+    margin: 10px;
+    padding: 10px;
+
+    min-height: calc(80vh - 60px);
+}
+
+.files {
+    background-color: #dddddd;
+    border-radius: 15px;
+
+    margin: 0px;
+    margin-right: 10px;
+    
+    width: 100%;
+}
+
+.file {
+    display: flex;
+
+    background: #c9c9c9;
+    border-radius: 5px;
+
+    height: 50px;
+
+    margin: 10px;
+}
+
+.fileIcon {
+    align-self: center;
+    margin: 2px;
+    height: 45px;
+}
+
+.filename {
+    font-size: 150%;
+    font-style: oblique;
+
+    background: none;
+    border: none;
+    outline: none;
+
+    width: 50%;
+    padding: 5px;
+}
+
+.filename:focus {
+    color: rgb(20, 141, 211);
+}
+
+.fileActions {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    
+    width: 100%;
+}
+
+.fileRedirect {
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+}
+
+.fileActionsButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100%;
+
+    margin: 2px;
+
+    width: 35px;
+    height: 35px;
+
+    cursor: pointer;
+}
+
+.fileActionsButtonIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #c4c4c4;
+    border-radius: 15px;
+
+    margin: 0px;
+    padding: 10px;
+
+    width: 20%;
+    min-width: 300px;
+}
+
+.anonDataLabel {
+    font-size: 150%;
+    font-weight: 600;
+
+    width: 95%;
+    margin: 5px;
+    text-align: left;
+}
+
+.anonData {
+    font-size: 150%;
+    font-weight: 600;
+
+    outline: 2px solid rgb(0, 0, 0);
+    background: rgb(224, 224, 224);
+    border-radius: 5px;
+    
+    width: 95%;
+}
+
+.anonTimeLeft {
+    font-size: 150%;
+    font-weight: 600;
+
+    color: #ffff00;
+    outline: 2px solid rgb(0, 0, 0);
+    background: rgb(161, 161, 161);
+    border-radius: 5px;
+    
+    width: 95%;
+}
+
+.anonDataWarn {
+    font-weight: bold;
+
+    outline: 2px solid rgb(0, 0, 0);
+    background: rgb(224, 224, 224);
+    border-radius: 5px;
+
+    margin: 15px;
+    margin-bottom: 0px;
+    padding: 5px;
+
+    width: 95%;
+}
+
+.tutorialVideo {
+    width: 95%;
+    
+    border-radius: 5px;
+    align-self: center;
+
+    margin: 15px;
+
+    outline: 2px solid rgb(0, 0, 0);
+}
+
+footer {
+    background-color: #dddddd;
+    border-radius: 25px;
+
+    text-align: center;
+    font-weight: 600;
+
+    margin: 10px;
+    padding: 0px;
+
+    height: 10vh;
+}
+
+footer a {
+    color: black;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: rgb(192, 192, 192);
+}
